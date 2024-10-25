@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMERGENSI - Interpersonal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="Home" class="container">
+      <header>
+        <div class="wrapper-navbar">
+          <div class="logo">
+            <img src="img/logo.png" alt="logo" width="100px" />
+          </div>
+          <nav>
+            <div class="card text-center">
+              <a href="#Home" class="header-link">
+                <h1>Home</h1>
+              </a>
+            </div>
+            <div class="card text-center">
+              <a href="#About us" class="header-link">
+                <h1>About</h1>
+              </a>
+            </div>
+            <div class="card text-center">
+              <a href="#Menu" class="header-link">
+                <h1>Menu</h1>
+              </a>
+            </div>
+            <div class="card text-center">
+              <a href="#contact" class="header-link">
+                <h1>Contact</h1>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="slideshow-container">
+        <center>
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="/img/gambar1.jpg" style="width: 100%" />
+            <div class="text" style="color: white"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="/img/gambar2.jpg" style="width: 100%" />
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="/img/gambar3.jpg" style="width: 100%" />
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="/img/gambar4.jpg" style="width: 100%" />
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="/img/gambar5.jpg" style="width: 100%" />
+            <div class="text"></div>
+          </div>
+        </center>
+      </div>
+      <br />
+
+      <div class="dot" style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <br />
+
+      <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>
+      <br /><br />
+      <br /><br />
+      <br />
+      <center>
+        <div class="wrapper-judul">
+          <div class="text-center-logo">
+            <img
+              class="logo-bab"
+              src="img/logo.png"
+              alt="owner"
+              width="140px"
+            />
+          </div>
+          <div class="text-center-1">
+            <h3>- DOSEN PENGAMPU</h3>
+          </div>
+        </div>
+      </center>
+      <br /><br />
+      <br /><br />
+      <div class="wrapper-owner">
+        <div class="gambar-owner">
+          <img
+            class="owner"
+            src="img/owner.jpg"
+            alt="owner"
+            width="400px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+        </div>
+        <div class="motivation">
+          <div class="kata-1">
+            <p class="kata-1">
+              “Lorem ipsum dolor sit amet consectetur adipisicing elit.“
+            </p>
+            <br /><br />
+          </div>
+          <div
+            class="kata-motivation"
+            style="background-color: rgb(220, 218, 218)"
+          >
+            <p>— Nina Alfa .....</p>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <br /><br />
+      <br />
+
+      <a href="#" id="Home" class="gobtn"><i class="fas fa-arrow-up"></i></a>
+
+      <div id="About us" class="">
+        <div class="wrapper-judul">
+          <div class="text-center-logo">
+            <img
+              class="logo-bab"
+              src="img/logo.png"
+              alt="owner"
+              width="140px"
+            />
+          </div>
+          <div class="text-center-1">
+            <h3>- KEGIATAN</h3>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="text">
+        <div class="text-center-2">
+          <p>SMK NEGERI 10 SEMARANG</p>
+        </div>
+        <div class="text-center-3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis hic
+            doloribus <br />
+            tempora odio autem rem!
+          </p>
+        </div>
+      </div>
+
+      <div class="wrapper-bahan">
+        <div class="produk text-center gambar-1">
+          <img
+            class="bahan-img"
+            src="img/biji kopi.jpg"
+            alt="biji kopi"
+            width="340px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+          <div class="kata-2">100% natural</div>
+          <div class="kata-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, ullam.
+          </div>
+        </div>
+        <div class="produk-2 text-center gambar-2">
+          <img
+            class="bahan-img"
+            src="img/alat kopi.jpg"
+            alt="alat kopi"
+            width="340px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+          <div class="kata-2">high quality</div>
+          <div class="kata-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, ullam.
+          </div>
+        </div>
+        <div class="produk-2 text-center gambar-3">
+          <img
+            class="bahan-img"
+            src="img/hasil kopi.jpg"
+            alt="minuman"
+            width="340px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+          <div class="kata-2">fresh items</div>
+          <div class="kata-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, ullam.
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <br /><br />
+      <br />
+      <br /><br />
+      <div id="Menu" class="">
+        <div class="wrapper-judul-1">
+          <div class="text-center-logo">
+            <img
+              class="logo-bab"
+              src="img/logo.png"
+              alt="owner"
+              width="140px"
+            />
+          </div>
+          <div class="text-center-1">
+            <h3>- Menu</h3>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="text">
+        <div class="text-center-2">
+          <p>ANGGOTA EMERGENSI</p>
+        </div>
+        <div class="text-center-3">
+          <p>Berikut anggota dari kelompok EMERGENSI :</p>
+        </div>
+      </div>
+      <div class="">
+        <div class="wrapper-menu">
+          <div class="produk-1 text-center gambar-1">
+            <img
+              src="img/bg2.jpg"
+              alt="alat kopi"
+              width="280px"
+              style="border-radius: 10px 10px 10px 10px"
+            />
+            <div class="kata-4">Mahlayel Ahmad Putra</div>
+            <div class="kata-5">
+              Ketua Umum
+              <br />
+              A11.2024.15885
+            </div>
+          </div>
+        </div>
+        <br /><br /><br />
+
+        <div class="wrapper-menu">
+          <div class="produk-1 text-center gambar-1">
+            <img
+              src="img/bg2.jpg"
+              alt="minuman"
+              width="280px"
+              style="border-radius: 10px 10px 10px 10px"
+            />
+            <div class="kata-4">Candra Heragus Destyana</div>
+            <div class="kata-5">
+              Bendahara
+              <br />
+              A11.2024.15866
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-menu jarak1">
+        <div class="produk-1 text-center gambar-1 transform1">
+          <img
+            src="img/bg2.jpg"
+            alt="alat kopi"
+            width="280px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+          <div class="kata-4">Muhammad Irfan Setiawan</div>
+          <div class="kata-5">
+            Sekertaris 1
+            <br />
+            A11.2022.14681
+          </div>
+        </div>
+        <div class="produk-1 text-center gambar-1 transform2">
+          <img
+            src="img/bg2.jpg"
+            alt="minuman"
+            width="280px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+          <div class="kata-4">Muhammad Ardhi Al-Irsyad</div>
+          <div class="kata-5">
+            Sekertaris 2
+            <br />
+            A11.2024.15867
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-menu jarak1">
+        <div class="produk-1 text-center gambar-1 transform3">
+          <img
+            src="img/bg2.jpg"
+            alt="alat kopi"
+            width="280px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+          <div class="kata-4">Faishal Rasyid Rusianto</div>
+          <div class="kata-5">
+            Humas 1
+            <br />
+            A11.2024.15869
+          </div>
+        </div>
+        <div class="produk-1 text-center gambar-1 transform2">
+          <img
+            src="img/bg2.jpg"
+            alt="minuman"
+            width="280px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+          <div class="kata-4">Arya Yudha Pratama</div>
+          <div class="kata-5">
+            Humas 2
+            <br />
+            A11.2024.15865
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-menu jarak1">
+        <div class="produk-1 text-center gambar-1 transform3">
+          <img
+            src="img/bg2.jpg"
+            alt="alat kopi"
+            width="280px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+          <div class="kata-4">Ranggapesty Ajisaputra</div>
+          <div class="kata-5">
+            Logistik 1
+            <br />
+            A11.2024.15874
+          </div>
+        </div>
+        <div class="produk-1 text-center gambar-1 transform2">
+          <img
+            src="img/bg2.jpg"
+            alt="minuman"
+            width="280px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+          <div class="kata-4">Hafiizh Febrianta</div>
+          <div class="kata-5">
+            Logistik 2
+            <br />
+            A11.2024.15864
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-menu jarak1">
+        <div class="produk-1 text-center gambar-1 transform3">
+          <img
+            src="img/bg2.jpg"
+            alt="alat kopi"
+            width="280px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+          <div class="kata-4">Sahal Fikri Maftukhin</div>
+          <div class="kata-5">
+            PDD 1
+            <br />
+            A11.2024.15863
+          </div>
+        </div>
+        <div class="produk-1 text-center gambar-1 transform2">
+          <img
+            src="img/bg2.jpg"
+            alt="minuman"
+            width="280px"
+            style="border-radius: 10px 10px 10px 10px"
+          />
+          <div class="kata-4">Arya Hafidz Amrullah</div>
+          <div class="kata-5">
+            PDD 2
+            <br />
+            A11.2024.15871
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <br /><br />
+    <br />
+    <br /><br />
+    <br /><br />
+
+    <script src="kopi.js"></script>
+  </body>
+</html>
