@@ -51,6 +51,11 @@
               src="img/logo-emergensi.jpg"
               alt="logo"
             />
+
+            <!-- <audio
+              id="audio"
+              src="https://media1.vocaroo.com/mp3/1nJmxSj0V3h6"
+            ></audio> -->
           </div>
           <nav>
             <div class="card text-center">
@@ -72,6 +77,11 @@
               <a href="#Objective" class="header-link">
                 <h1 class="text-nav">𝐝𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧</h1>
               </a>
+            </div>
+            <div class="music">
+              <audio id="audio" src="./img/lagu.mp3"></audio>
+
+              <button id="playButton">Play Lagu</button>
             </div>
           </nav>
         </div>
@@ -105,6 +115,22 @@
         <span class="dot"></span>
         <span class="dot"></span>
       </div>
+
+      <script>
+        //pengaturan lagu
+        const audio = document.getElementById("audio");
+        const playButton = document.getElementById("playButton");
+
+        playButton.addEventListener("click", () => {
+          if (audio.paused) {
+            audio.play();
+            playButton.textContent = "Pause Lagu";
+          } else {
+            audio.pause();
+            playButton.textContent = "Play Lagu";
+          }
+        });
+      </script>
 
       <script>
         let slideIndex = 0;
