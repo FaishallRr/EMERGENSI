@@ -87,7 +87,7 @@ nav {
 .wrapper-bahan-akhir {
   font-family: "Poppins", sans-serif;
   width: 100%;
-  height: 600px;
+  height: 680px;
   place-items: center;
   /*Centersitemsbothhorizontallyandvertically*/
   display: flex;
@@ -1021,7 +1021,7 @@ table {
   top: 200px;
   transform: translateX(-770px);
   z-index: 0;
-  margin-top: 600px;
+  margin-top: 750px;
   -webkit-transform: translateX(-770px);
   -moz-transform: translateX(-770px);
   -ms-transform: translateX(-770px);
@@ -1035,7 +1035,7 @@ table {
   position: absolute;
   top: 5px;
   z-index: 0;
-  margin-top: 600px;
+  margin-top: 750px;
 }
 
 .gambar-akhir {
@@ -1163,7 +1163,7 @@ table {
   flex-direction: column;
   justify-content: center;
   z-index: 10;
-  margin-left: 400px;
+  margin-left: 385px;
   position: relative;
   margin-top: 80px;
 }
@@ -1184,8 +1184,16 @@ table {
   margin-bottom: 130px;
 }
 
-button {
-  background-color: #4caf50;
+.music-youtube {
+  position: relative;
+  margin-top: 50px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.lagu {
+  background-color: #8c52ff;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -1195,11 +1203,11 @@ button {
   transition: background-color 0.3s ease, transform 0.2s;
 }
 
-button:hover {
-  background-color: #45a049;
+.lagu:hover {
+  background-color: #854ff2;
 }
 
-button:active {
+.lagu:active {
   transform: scale(0.95);
 }
 
@@ -1801,5 +1809,13 @@ button:active {
     z-index: 10;
     margin-top: 80px;
     margin-bottom: 330px;
+  }
+
+  .music-youtube {
+    position: relative;
+    margin-top: -80px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
   }
 }
