@@ -669,24 +669,19 @@
       </div>
 
       <div id="Music" class="music-youtube">
-        <!-- Audio Element dengan Autoplay dan Mute -->
         <audio id="audio" src="./img/lagu.mp3" autoplay muted loop></audio>
 
-        <!-- Play/Pause Button -->
         <button class="lagu" id="playButton">Unmute Lagu</button>
 
-        <!-- JavaScript -->
         <script>
           const audio = document.getElementById("audio");
           const playButton = document.getElementById("playButton");
 
-          // Fungsi untuk menghapus mute setelah halaman dimuat
           window.addEventListener("load", () => {
-            audio.muted = false; // Menghapus mute setelah halaman selesai dimuat
-            playButton.textContent = "Pause Lagu"; // Tombol berubah menjadi Pause
+            audio.muted = false;
+            playButton.textContent = "Pause Lagu";
           });
 
-          // Fungsi Play/Pause dengan tombol
           playButton.addEventListener("click", () => {
             if (audio.paused) {
               audio.play();
