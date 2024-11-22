@@ -79,9 +79,19 @@
               </a>
             </div>
             <div class="music">
-              <audio id="audio" src="./img/lagu.mp3"></audio>
-
-              <button id="playButton">Play Lagu</button>
+              //pengaturan lagu
+              <audio
+                id="audio"
+                src="./img/lagu.mp3"
+                autoplay
+                muted
+                loop
+              ></audio>
+              <script>
+                // Aktifkan suara setelah beberapa detik
+                const audio = document.getElementById("audio");
+                audio.muted = false; // Hapus mute
+              </script>
             </div>
           </nav>
         </div>
@@ -115,22 +125,6 @@
         <span class="dot"></span>
         <span class="dot"></span>
       </div>
-
-      <script>
-        //pengaturan lagu
-        const audio = document.getElementById("audio");
-        const playButton = document.getElementById("playButton");
-
-        playButton.addEventListener("click", () => {
-          if (audio.paused) {
-            audio.play();
-            playButton.textContent = "Pause Lagu";
-          } else {
-            audio.pause();
-            playButton.textContent = "Play Lagu";
-          }
-        });
-      </script>
 
       <script>
         let slideIndex = 0;
