@@ -223,6 +223,19 @@ img {
   font-weight: 500;
 }
 
+.text-nav:hover {
+  color: red;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.color-text {
+  color: red;
+}
+
 .text-center {
   display: flex;
   flex-direction: column;
@@ -262,23 +275,27 @@ img {
 }
 
 .kata-2 {
-  color: #f2f2f2;
-  font-size: 28px;
+  color: #ffffff;
+  font-size: 20px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
-  top: 200px;
+  top: 230px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px black;
 }
 
 .kata-3 {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 16px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
   bottom: 180px;
+  font-weight: 600;
+  -webkit-text-stroke: 0.8px black;
 }
 
 .description-layel {
@@ -1211,6 +1228,22 @@ table {
   transform: scale(0.95);
 }
 
+.tentang {
+  font-size: 35px;
+}
+
+.tanda-tanya {
+  font-size: 45px;
+}
+
+.logo-tentang {
+  width: 100px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .parent-container {
     position: relative; /* Pastikan induk memiliki posisi */
@@ -1884,5 +1917,13 @@ table {
     -moz-transform: translateX(-10px);
     -ms-transform: translateX(-10px);
     -o-transform: translateX(-10px);
+  }
+
+  .tentang {
+    font-size: 18px;
+  }
+
+  .tanda-tanya {
+    font-size: 25px;
   }
 }
